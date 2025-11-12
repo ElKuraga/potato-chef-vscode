@@ -1,0 +1,36 @@
+{
+  "name": "potato-chef",
+  "displayName": "Potato Chef",
+  "description": "Extension for quick access to potato recipes",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:potato-chef.showRecipes"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "potato-chef.showRecipes",
+        "title": "Показать рецепты картофельных блюд",
+        "category": "Potato Chef"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "potato-chef.showRecipes",
+        "key": "ctrl+cmd+p",
+        "mac": "ctrl+cmd+p"
+      }
+    ]
+  },
+  "scripts": {},
+  "devDependencies": {
+    "@types/vscode": "^1.105.0"
+  }
+}
